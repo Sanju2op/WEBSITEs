@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Code Finder</title>
+    <style>
+        main {
+            text-align: center;
+        }
+        body{
+            background-color: rgb(53, 53, 53);
+            color: aliceblue;
+        }
+        .registerbtn {
+            background-color:crimson;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        input {
+            width: 89%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+    .registerbtn:hover {
+    opacity: 1;
+    }
+    </style>
+    <script>
+        function confim() {
+            var sauce = document.getElementById("code").value;
+            confirm("your Entered nomber is :" + sauce);
+            location.replace("https://nhentai.net/g/" + sauce);
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <caption><h3>Anime Sauce Codes are a way to obtain anime on-line. 
+            They permit individuals to get entry to anime with out paying for a subscription or shopping for a complete anime DVD directly. 
+            There are lots of methods to make use of the sauce codes, and I am going to hold this text up to date as they modify.</h3></caption>
+        <br/>
+        <hr/>
+        <br/>
+        
+        <table align="center">
+            <tr>
+                <td>
+                    <label for="code"><H2>Copy Paste Sauce Code Here</H2></label>
+                    <hr/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="code" type="number" placeholder="Numeric only" required/>
+                    <hr/>
+                    <button class="registerbtn" for="code" onclick="confim()" type="button"><B>Enter Code & Go</B></button>
+                </td>
+            </tr>
+    </table>
+    <br/>
+    <hr/>
+    <br/>
+    </main>
+</body>
+</html>
